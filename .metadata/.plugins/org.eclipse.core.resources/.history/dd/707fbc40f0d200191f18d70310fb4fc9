@@ -22,10 +22,7 @@ public class PainoSovellus {
 		} else if(valinta == 0){
 			System.exit(0);
 		} else {
-			System.out.println("Anna paino: ");
-			double paino = scan.nextDouble();
-			TiedostoTyokalut tiedostoTyokalut = new TiedostoTyokalut();
-			tiedostoTyokalut.kirjoita(paino + "", "painotcsv.txt");
+			
 		}
 	}
 	
