@@ -19,18 +19,15 @@ public class PainoSovellus {
 			System.out.println("2) Tulosta painokuvaaja");
 			System.out.println("Anna valintasi (0, 1 tai 2):");
 			valinta = scan.nextInt();
-			scan.nextLine();
 			if (valinta == 2) {
 				tulostaPainoKuvaaja();
 			} else if (valinta == 0) {
 				System.exit(0);
 			} else {
-				Pvm pvm = new Pvm();
-				System.out.println("T‰n‰‰n on: " + pvm);
-				System.out.println("Anna paino (muodossa 9.9.2019,85): ");
+				System.out.println("Anna paino: ");
 				String paino = scan.nextLine();
 				TiedostoTyokalut tiedostoTyokalut = new TiedostoTyokalut();
-				tiedostoTyokalut.kirjoita(paino, "painotcsv.txt");
+				tiedostoTyokalut.kirjoita("" + paino + "", "painotcsv.txt");
 			}
 		}
 	}

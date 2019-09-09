@@ -27,7 +27,7 @@ public class PainoSovellus {
 			} else {
 				Pvm pvm = new Pvm();
 				System.out.println("T‰n‰‰n on: " + pvm);
-				System.out.println("Anna paino (muodossa 9.9.2019,85): ");
+				System.out.println("Anna paino (muodossa 9.9.2019,85: ");
 				String paino = scan.nextLine();
 				TiedostoTyokalut tiedostoTyokalut = new TiedostoTyokalut();
 				tiedostoTyokalut.kirjoita(paino, "painotcsv.txt");

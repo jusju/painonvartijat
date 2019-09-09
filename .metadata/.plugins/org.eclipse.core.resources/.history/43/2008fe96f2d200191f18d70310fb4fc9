@@ -44,9 +44,6 @@ public class Piirturi {
 
 	public void piirraNaytolle() {
 		for (int y = 0; y < 80; y++) {
-			if(kuvaaja[y][0].equals(" ")) {
-				break;
-			}
 			for (int x = 0; x < 50; x++) {
 				if (kuvaaja[y][x] != null) {
 					System.out.print(kuvaaja[y][x]);
