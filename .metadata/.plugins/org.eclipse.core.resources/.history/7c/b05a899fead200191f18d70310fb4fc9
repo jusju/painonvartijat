@@ -1,0 +1,25 @@
+package viikko6;
+
+/**
+ *
+ * @author Jukka Juslin
+ *
+ */
+public class PainoSovellus {
+
+	public void aja() {
+		PainoMittaus[] painot = new PainoMittaus[400];
+		TiedostoTyokalut tiedostoTyokalut = new TiedostoTyokalut();
+		painot = tiedostoTyokalut.lue();
+		Piirturi piirturi = new Piirturi(painot);
+		piirturi.alustaKuva();
+		piirturi.piirraNaytolle();
+		MeNaiset meNaiset = new MeNaiset();
+		meNaiset.kerroFaktat();
+	}
+
+	public static void main(String[] args) {
+		PainoSovellus paino = new PainoSovellus();
+		paino.aja();
+	}
+}
